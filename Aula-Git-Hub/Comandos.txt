@@ -1,9 +1,0 @@
-Passos:
-
-git init
-git add .
-git commit - "mensagem"
-git branch -M main
-gir remote add origin https://github.com/Wesleypk/TalentCloudProz
-
-git push -u origin main
