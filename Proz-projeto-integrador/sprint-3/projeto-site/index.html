@@ -12,13 +12,13 @@
     <!-- Navegação -->
     <nav>
         <div class="links-container">
-            <a href="#home"><img src="img/logo.png" alt="Logo Espaço Psique" class="logo"></a>
-            <a href="#home" class="active">Página Inicial</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#porque-fazer">Porque fazer</a>
-            <a href="#contato">Contato</a>
-            <a href="profissionais.html">Psicólogos</a>
-            <a href="#duvidas">Dúvidas</a>
+            <a href="index.html#home"><img src="img/logo.png" alt="Logo Espaço Psique" class="logo"></a>
+            <a href="index.html#home" class="active">Página Inicial</a>
+            <a href="index.html#servicos">Serviços</a>
+            <a href="index.html#porque-fazer">Porque fazer</a>
+            <a href="index.html#contato">Contato</a>
+            <a href="index.html#psicologos">Psicólogos</a>
+            <a href="index.html#duvidas">Dúvidas</a>
             <a class="agendar-sessao" href="#home">AGENDAR SESSÃO</a>
         </div>
     </nav>
@@ -90,12 +90,13 @@
 
         <!-- Seções adicionais -->
         <section id="servicos">
-            <div class="servicos-header">
-                <p class="subtitulo-servicos"><strong>Atendimento Psicológico On-line para:</strong></p>
-            </div>
             <div class="servicos-titulo">
                 <h2 class="titulo-servicos">Nossos serviços</h2>
             </div>
+            <div class="servicos-header">
+                <p class="subtitulo-servicos"><strong>Atendimento Psicológico On-line para:</strong></p>
+            </div>
+
             <div class="servicos-container">
                 <div class="servico-box">
                     <img src="img/adolescente.jpg" alt="Imagem de adolescente">
@@ -108,12 +109,12 @@
                 <div class="servico-box">
                     <img src="img/idoso.jpg" alt="Imagem de idoso">
                     <span class="legenda">IDOSO</span>
-                </div>                
+                </div>
             </div><br>
             <div class="agendar">
                 <a href="#home" class="agendar-sessao">AGENDAR SESSÃO</a>
             </div>
-           
+
             <div class="texto-explicativo">
                 <h2>O que é Psicoterapia afinal?</h2>
                 <p>
@@ -158,29 +159,24 @@
 
         <section id="psicologos">
             <h2>Nossos profissionais</h2>
-            <p>Conheça nossa equipe de profissionais qualificados, prontos para ajudar você em sua jornada.</p>
+            <p>Conheça nossa equipe de profissionais qualificados, prontos para ajudar você em sua jornada.</p><br><br>
+            <div class="nossos-profissionais-container">
             <div class="box">
-                <img src="img\freud-logo.png" alt="perfil freud">
-                <span>Sigmund Freud</span>
+                <a href="freud.html"><img src="img\freud-logo.png" alt="perfil freud"></a>
+                <a href="freud.html"><span>Sigmund Freud</span></a>
                 <p>Profissional de Psicanálise</p>
             </div>
             <div class="box">
-                <img src="img\laura-logo.png" alt="perfil laura">
-                <span>Laura Perls</span>
+                <a href="laura.html"><img src="img\laura-logo.png" alt="perfil laura"></a>
+                <a href="laura.html"><span>Laura Perls</span></a>
                 <p>Profissional de Gestalt</p>
             </div>
             <div class="box">
-                <img src="img\aaron-logo.png" alt="perfil Aaron">
-                <span>Aaron Black</span>
+                <a href="aaron.html"><img src="img\aaron-logo.png" alt="perfil Aaron"></a>
+                <a href="aaron.html"><span>Aaron Black</span></a>
                 <p>Profissional de TCC</p>
             </div>
-            <style>
-                div.box {
-                    width: 550px;
-                    display: inline-block;
-                }
-            </style>
-
+        </div>
         </section>
 
         <section id="duvidas">
@@ -189,7 +185,7 @@
         </section>
     </main>
 
-    <section class="contato">
+    <section id="contato">
         <h2>Entre em Contato</h2>
         <p>Agende uma consulta ou tire suas dúvidas:</p>
         <ul>
