@@ -17,7 +17,9 @@
 
 /* Estilo base */
 body {
-    
+    width: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: #333;
@@ -37,61 +39,6 @@ body {
     
 } */
 
-.teste {
-    margin-top: 0;
-    padding-top: 0px;
-    margin-bottom: 0px;
-    background-image: url(../img/home2.png);
-    background-repeat: no-repeat;
-    background-size:cover ;
-    font-size: 12px;
-    background-position: center;
-    min-height: 800px;
-}
-
-/*Remover espaço entre a imagem home e a barra de navegação*/
-.teste h2,
-.teste blockquote,
-.teste p {
-    margin: 0;
-}
-
-.teste h2 {
-    margin-top: 200px;
-    margin-left: 30px;
-    text-align: center;
-    display: inline-block;
-    font-size: 3rem;
-    color: #9b2642;
-    margin-bottom: 20px;
-    background: rgba(0, 0, 0, 0.75);
-    color: whitsmoke;
-    border-radius: 0.5em;
-}
-
-.teste blockquote {
-    margin-left: 35px;
-    font-style: italic;
-    font-size: 1.5rem;
-    color: #6c3a3a;
-    margin-bottom: 20px;
-    background: rgba(0, 0, 0, 0.75);
-    display: inline-block;
-    color: whitsmoke;
-    border-radius: 0.5em;
-    
-}
-
-.teste p {
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.75);
-    font-size: 1.5rem;
-    color: #6c3a3a;
-    margin-bottom: 0px;
-    margin-left: 35px;
-    clear:right;
-    border-radius: 0.5em;
-}
 .agendar{
     display: flex;
     justify-content: center;
@@ -355,7 +302,8 @@ body {
 }
 
 .btn-agendar:hover {
-    background-color: #0c0c0c;
+    background-color
+    : #0c0c0c;
 }
 
 /* Responsividade */
@@ -414,6 +362,8 @@ section ul {
 
 #servicos, #porque-fazer, #contato, #psicologos, #duvidas {
     background-color: #f7e6d7;
+    text-decoration: none;
+    color: #800040;
 }
 
 
@@ -688,13 +638,42 @@ section.duvidas {
     padding: 40px;
     color: #800040; /* Texto escuro para contraste */
     border-radius: 8px; /* Bordas arredondadas, opcional */
+    font-family: Arial, sans-serif; /* Adicione o mesmo estilo da FAQ */
 }
 
-section.contato {
-    background-color: #f0e6da; /* Troque este código por outro se necessário */
-    padding: 40px;
-    color: #800040; /* Texto escuro para contraste */
-    border-radius: 8px; /* Bordas arredondadas, opcional */
+.faq-item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.faq-question {
+    background-color: #ffffff;
+    color: #800040;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-answer {
+    display: none; /* Escondida por padrão */
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #000000;
+    padding: 0.75rem; /* Adiciona um espaçamento interno */
+    border-left: 4px solid #800040; /* Borda lateral esquerda com destaque */
+    background-color: #ffffff; /* Cor de fundo sutil */
+    border-radius: 4px; /* Bordas arredondadas */
 }
 
 
@@ -748,3 +727,54 @@ section.contato {
     justify-content: space-around;
 
 }
+#psicologos a{
+    text-decoration: none;
+    color: #800040;
+}
+
+footer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .developers {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .developer {
+    text-align: center;
+  }
+  
+  .developer p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .social-logo {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0073b1; /* Cor azul padrão do LinkedIn */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #005582;
+  }
+  
